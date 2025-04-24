@@ -32,7 +32,7 @@ async function LandingPage() {
             <div className="absolute top-32 left-1/4 w-72 h-72 bg-primary-500/10 rounded-full filter blur-[120px] opacity-70" />
             <div className="absolute top-40 right-1/4 w-72 h-72 bg-secondary-500/10 rounded-full filter blur-[120px] opacity-70" />
             
-            <div className="relative inline-block">
+            <div className="relative inline-block mt-2 mb-4">
               <div className="absolute -inset-1 bg-gradient-to-r from-primary-500 to-secondary-500 blur-xl opacity-10 rounded-3xl" />
               <h1 className="relative text-5xl md:text-6xl lg:text-7xl font-bold bg-gradient-to-r
                 from-gray-50 via-gray-200 to-gray-100 text-transparent bg-clip-text mb-8 leading-tight">
@@ -40,12 +40,15 @@ async function LandingPage() {
                 Development Experience
               </h1>
             </div>
-            <p className="text-xl text-gray-300 max-w-3xl mx-auto mb-10">
+            {/* <p className="text-xl text-gray-300 max-w-3xl mx-auto mb-10">
               Join the next generation of developers with our professional suite of tools
+            </p> */}
+            <p className="text-xl text-gray-300 max-w-3xl mx-auto mt-8 mb-20">
+              <i>The All in one Online Compiler cum IDE</i>
             </p>
             
             {/* CTA buttons */}
-            <div className="flex flex-wrap justify-center gap-4 mb-8">
+            <div className="flex flex-wrap justify-center gap-4 mb-16">
               <SignedIn>
                 <HomepageButton className="glassmorphism-dark hover:shadow-glow px-8 py-3 rounded-lg text-white
                    bg-gradient-to-r from-primary-600 to-primary-500 hover:from-primary-500 hover:to-primary-400
@@ -68,7 +71,7 @@ async function LandingPage() {
           </div>
 
           {/* Enterprise Features */}
-          <div id="features" className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-28">
+          <div id="features" className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mt-16 mb-36">
             {ENTERPRISE_FEATURES.map((feature) => (
               <div
                 key={feature.label}
@@ -93,8 +96,8 @@ async function LandingPage() {
             ))}
           </div>
 
-          {/* Pricing Card */}
-          <div className="relative max-w-4xl mx-auto">
+          {/* CTA Card */}
+          <div className="relative max-w-4xl mx-auto my-32">
             <div className="absolute -inset-0.5 bg-gradient-to-r from-primary-500/30
               to-secondary-500/30 rounded-2xl blur-md opacity-75" />
               
