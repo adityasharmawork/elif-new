@@ -2,7 +2,7 @@
 // import { ConvexHttpClient } from "convex/browser";
 import NavigationHeader from "@/components/NavigationHeader";
 import { ENTERPRISE_FEATURES, FEATURES } from "./_constants";
-import { ExternalLink, Star } from "lucide-react";
+import { Star } from "lucide-react";
 import { SignedIn, SignedOut } from "@clerk/nextjs";
 import FeatureCategory from "./_components/FeatureCategory";
 import FeatureItem from "./_components/FeatureItem";
