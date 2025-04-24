@@ -1,4 +1,4 @@
-import { Code, Github, Heart, Twitter } from "lucide-react";
+import { Code, FileHeart, Github, Heart, HeartIcon, Linkedin, LucideHeart, Twitter } from "lucide-react";
 import Link from "next/link";
 
 function Footer() {
@@ -27,7 +27,7 @@ function Footer() {
           {/* Links */}
           <div className="flex flex-col md:flex-row items-center gap-8">
             {/* Site links */}
-            <div className="flex items-center gap-6">
+            {/* <div className="flex items-center gap-6">
               <Link href="/support" className="text-gray-400 text-sm hover:text-primary-400 transition-colors">
                 Support
               </Link>
@@ -37,12 +37,21 @@ function Footer() {
               <Link href="/terms" className="text-gray-400 text-sm hover:text-primary-400 transition-colors">
                 Terms
               </Link>
+            </div> */}
+
+            <div className="flex items-center gap-6">
+              <Link href="/editor" className="text-gray-400 text-sm hover:text-primary-400 transition-colors">
+                Editor
+              </Link>
+              <Link href="/snippets" className="text-gray-400 text-sm hover:text-primary-400 transition-colors">
+                Snippets
+              </Link>
             </div>
             
             {/* Social links */}
             <div className="flex items-center gap-4">
               <a 
-                href="https://github.com" 
+                href="https://github.com/adityasharmawork" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="p-2 rounded-full text-gray-400 hover:text-primary-400 hover:bg-primary-500/10 transition-all"
@@ -51,13 +60,22 @@ function Footer() {
                 <Github className="size-4" />
               </a>
               <a 
-                href="https://twitter.com" 
+                href="https://x.com/AdityaSharma056" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="p-2 rounded-full text-gray-400 hover:text-primary-400 hover:bg-primary-500/10 transition-all"
                 aria-label="Twitter"
               >
                 <Twitter className="size-4" />
+              </a>
+              <a 
+                href="https://www.linkedin.com/in/adityasharma123/" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="p-2 rounded-full text-gray-400 hover:text-primary-400 hover:bg-primary-500/10 transition-all"
+                aria-label="Twitter"
+              >
+                <Linkedin className="size-4" />
               </a>
               <div className="flex items-center gap-1 text-gray-500 text-xs">
                 <span>Made with</span>
