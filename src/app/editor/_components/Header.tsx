@@ -41,7 +41,7 @@
 // import { ConvexHttpClient } from "convex/browser";
 // import { api } from "../../../../convex/_generated/api";
 import Link from "next/link";
-import { Code, Code2, Menu, X } from "lucide-react";
+import { Code, Container, Menu, X } from "lucide-react";
 import { SignedIn } from "@clerk/nextjs";
 import ThemeSelector from "./ThemeSelector";
 // import LanguageSelector from "./LanguageSelector";
@@ -109,7 +109,7 @@ function Header() {
                 bg-gradient-to-r from-primary-500/20 to-secondary-500/20 rounded-lg blur-md transition-opacity duration-300" />
               <div className="absolute inset-0 scale-x-0 group-hover:scale-x-100 origin-left h-[1px] bottom-0 bg-gradient-to-r from-primary-400 to-secondary-400 transition-transform duration-300" />
               
-              <Code2 className="w-4 h-4 relative z-10 group-hover:text-primary-400 transition-colors duration-300" />
+              <Container className="w-4 h-4 relative z-10 group-hover:text-primary-400 transition-colors duration-300" />
               <span className="text-sm font-medium relative z-10 group-hover:text-white transition-colors duration-300">
                 Snippets
               </span>
@@ -161,7 +161,7 @@ function Header() {
                 bg-dark-300/80 hover:bg-primary-600/10 border border-gray-800/30 hover:border-primary-500/30"
               onClick={() => setMobileMenuOpen(false)}
             >
-              <Code2 className="w-5 h-5 text-primary-400" />
+              <Container className="w-5 h-5 text-primary-400" />
               <span className="text-sm font-medium">Snippets</span>
             </Link>
             
